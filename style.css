@@ -1,0 +1,391 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1e1e25;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    --theme-color: #2D8DE6;
+    --br: .5rem;
+    --blue-grey: #242942;
+}
+
+.theme-color {
+    color: var(--theme-color)
+}
+
+.section-title {
+    color: var(--theme-color);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.content {
+    max-width: 72rem;
+    padding: 0 3rem;
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copyright-notice {
+    margin-bottom: 2rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+/* Tebex Partner Page */
+
+.partner-card {
+    border-radius: var(--br);
+    padding: 2rem;
+    background-color: var(--blue-grey);
+    transition: .5s;
+    margin-top: -200px;
+    line-height: 2;
+}
+
+.partner-card {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+}
+
+.partner-card b {
+    color: rgba(255, 255, 255, 1);
+}
+
+.bbb-button.tebex-partner-btn-2 {
+    position: relative;
+    right: auto;
+    margin-top: 1rem;
+}
+
+/* Header */
+
+.header {
+    height: 34rem;
+    background: linear-gradient(to bottom, rgb(16 11 41 / 85%) 0%, rgb(31 44 123 / 85%) 45%, #1e1e25 100%), url(https://cdn.coldfiredzn.com/main/header.webp) no-repeat center;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 7rem;
+}
+
+.header-logo img {
+    height: 7rem
+}
+
+.header-title {
+    padding: 0 3rem;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.header-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    padding: 0 3rem;
+    max-width: 72rem;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    border-radius: var(--br);
+    padding: 2rem;
+    background-color: var(--blue-grey);
+    transition: .5s;
+    box-shadow: 0 0 0 4px inset rgba(255, 255, 255, 0.07);
+}
+
+.box .box-title {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.box .box-subtitle {
+    font-size: 1.15rem;
+    opacity: 0.6;
+    margin-top: 0.4rem;
+    font-weight: 500;
+}
+
+/* Portfolio */
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.portfolio-item {
+    border-radius: var(--br);
+    height: 310px;
+    position: relative;
+}
+
+.portfolio-link {
+    text-decoration: none;
+}
+
+.portfolio-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #FFF;
+    text-decoration: none;
+    z-index: 2;
+    position: relative;
+}
+
+.portfolio-title,
+.portfolio-dark-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.portfolio-dark-bg {
+    background-color: rgb(0, 0, 0, 0.6);
+    border-radius: var(--br);
+}
+
+.portfolio-link:hover .portfolio-title,
+.portfolio-link:hover .portfolio-dark-bg {
+    opacity: 1;
+}
+
+.portfolio-section {
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.portfolio-section .section-title {
+    flex-grow: 1;
+}
+
+.bbb-button {
+    background-color: var(--theme-color);
+    outline: none;
+    border: none;
+    border-radius: var(--br);
+    color: #FFF;
+    font-size: 1.1rem;
+    padding: 0.65rem 2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: .25s;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.bbb-button:hover,
+.bbb-button:focus {
+    filter: brightness(85%)
+}
+
+.bbb-button .button-name {
+    margin: auto 0;
+}
+
+.bbb-button .icon {
+    margin-left: 1rem;
+}
+
+.bbb-button svg {
+    height: 1.6rem;
+    width: auto;
+    opacity: 60%;
+    display: inherit;
+}
+
+.bbb-button .button-content {
+    display: flex;
+}
+
+/* Contact */
+
+.contact-section {
+    text-align: center;
+    margin: 8rem 0;
+}
+
+.contact-section .title {
+    font-size: 1.9rem;
+    letter-spacing: .01rem;
+    font-weight: 700;
+}
+
+.contact-section .buttons {
+    margin: 2rem 0;
+}
+
+.contact-section button {
+    background-color: var(--theme-color);
+    outline: none;
+    border: none;
+    border-radius: var(--br);
+    color: #FFF;
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 0 0.5rem;
+    transition: .25s;
+    cursor: pointer;
+}
+
+.contact-section button:hover,
+.contact-section button:focus {
+    filter: brightness(85%)
+}
+
+.contact-section .button-content {
+    display: flex;
+}
+
+.contact-section img {
+    height: 2rem;
+    width: auto;
+    opacity: 50%;
+    display: inherit;
+}
+
+.contact-section .button-name {
+    margin: auto 0;
+}
+
+.contact-section .icon {
+    margin-right: .8rem;
+}
+
+/* Scroll */
+
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--blue-grey);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #393c4d;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Mobile */
+
+@media (max-width: 1500px) {
+    .portfolio-item {
+        height: 280px;
+    }
+}
+
+@media (max-width: 1300px) {
+    html {
+        font-size: 90%;
+    }
+    .header {
+        height: 30rem;
+    }
+    .header-logo {
+        padding-top: 5rem;
+    }
+    .portfolio-item {
+        height: 260px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .portfolio-item {
+        height: 210px;
+    }
+}
+
+@media (max-width: 950px) {
+    .box {
+        padding: 1.5rem;
+    }
+    html {
+        font-size: 85%;
+    }
+}
+
+@media (max-width: 799px) {
+    .portfolio-item {
+        height: 180px;
+    }
+    .box:last-child {
+        display: none;
+    }
+    .header-boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header-title {
+        font-size: 1.7rem;
+    }
+    .contact-section button {
+        margin-bottom: 1rem
+    }
+}
+
+@media (max-width: 580px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .portfolio-item {
+        height: 270px
+    }
+    .box .box-title {
+        font-size: 1.5rem
+    }
+    .box .box-subtitle {
+        font-size: 1.1rem
+    }
+    .header-logo img {
+        height: auto;
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+    .contact-section {
+        margin: 5rem auto;
+    }
+    .header-title {
+        margin-top: 1rem;
+    }
+    .header-boxes {
+        margin-top: 4rem
+    }
+}
+
+@media (max-width: 490px) {
+    .bbb-button span {
+        display: none
+    }
+}
