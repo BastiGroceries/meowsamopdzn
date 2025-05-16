@@ -1,3 +1,4 @@
+
 html, body {
     margin: 0;
     padding: 0;
@@ -33,7 +34,7 @@ body {
 .copyright-notice {
     margin-bottom: 2rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255,255,255,0.3);
     text-align: center;
 }
 
@@ -49,12 +50,12 @@ body {
 }
 
 .partner-card {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255,255,255,0.8);
     font-size: 1.1rem;
 }
 
 .partner-card b {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255,255,255,1);
 }
 
 .bbb-button.tebex-partner-btn-2 {
@@ -152,8 +153,7 @@ body {
     position: relative;
 }
 
-.portfolio-title,
-.portfolio-dark-bg {
+.portfolio-title, .portfolio-dark-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -168,8 +168,7 @@ body {
     border-radius: var(--br);
 }
 
-.portfolio-link:hover .portfolio-title,
-.portfolio-link:hover .portfolio-dark-bg {
+.portfolio-link:hover .portfolio-title, .portfolio-link:hover .portfolio-dark-bg {
     opacity: 1;
 }
 
@@ -198,8 +197,7 @@ body {
     text-decoration: none;
 }
 
-.bbb-button:hover,
-.bbb-button:focus {
+.bbb-button:hover, .bbb-button:focus {
     filter: brightness(85%)
 }
 
@@ -254,8 +252,7 @@ body {
     cursor: pointer;
 }
 
-.contact-section button:hover,
-.contact-section button:focus {
+.contact-section button:hover, .contact-section button:focus {
     filter: brightness(85%)
 }
 
@@ -284,16 +281,16 @@ body {
     background: rgb(0, 0, 0, 0);
 }
 
-::-webkit-scrollbar-thumb {
+ ::-webkit-scrollbar-thumb {
     background: var(--blue-grey);
     border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover {
+ ::-webkit-scrollbar-thumb:hover {
     background: #393c4d;
 }
 
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
     width: 10px;
 }
 
@@ -378,11 +375,11 @@ body {
     .header-title {
         margin-top: 1rem;
     }
+
     .header-boxes {
         margin-top: 4rem
     }
 }
-
 @media (max-width: 490px) {
     .bbb-button span {
         display: none
